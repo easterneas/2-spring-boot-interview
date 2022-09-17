@@ -17,11 +17,6 @@ public class UserController {
   @Autowired
   UserRepository userRepository;
 
-  @RequestMapping("/")
-  public String hello(){
-    return "Hello SJAKNSAKNLDKJA";
-  }
-
   @PostMapping(
           path = "login",
           consumes = MediaType.APPLICATION_JSON_VALUE,
