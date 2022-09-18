@@ -2,18 +2,12 @@ package net.interview.springauth.user;
 
 import lombok.Data;
 import lombok.experimental.Accessors;
-import net.interview.springauth.helper.HashHelper;
 
-import javax.crypto.SecretKeyFactory;
-import javax.crypto.spec.PBEKeySpec;
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 import java.security.NoSuchAlgorithmException;
-import java.security.spec.InvalidKeySpecException;
-import java.security.spec.KeySpec;
-import java.util.Base64;
 
 @Entity
 @Table(
